@@ -1,0 +1,427 @@
+    :root {
+        --main-text: #FFFFFF;
+        --second-text: #2F2F2F;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin-top: 100px;
+        font-family: 'Century gothic', 'Calibri', Helvetica;
+        background: #f2f2f2;
+    }
+
+    a {
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+
+    .contenedor {
+        max-width: 100vw;
+        width: 100%; 
+        margin: 0 auto;
+    }
+    /* Tamaño del ancho de la página */
+
+
+
+    header .barra-negra {
+        overflow: hidden;
+        position: fixed;
+        top: 0px;
+        background: #000;
+        color: var(--main-text);
+        height: 100px;
+        width: 100vw;
+
+    }
+
+    header .barra-blanca {
+        background: #f2f2f2;
+        padding: 20px;
+    }
+
+    header .barra-blanca p {
+        text-align: center;
+    }
+
+    .barra-blanca p span {
+        font-weight: bold;
+        color: var(--second-text);
+    }
+
+    header .barra-negra .flexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px 0 0;
+    }
+
+    li img {
+        margin-top: 6px;
+    }
+
+    .primera-lista {
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .segunda-lista {
+        margin-left: 0px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .segunda-lista li a {
+        font-size: 25px;
+    }
+
+    header .barra-negra nav ul {
+        display: flex;
+    }
+
+    header .barra-negra nav ul li {
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        list-style: none;
+    }
+
+    header .barra-negra nav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .imagen-card {
+        max-width: 400px;
+    }
+
+    .segunda-lista i {
+        color:  var(--main-text);
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    i:hover {
+        text-shadow: 5px 5px 5px black, 0 0 25px red, 0 0 25px red;
+        transition: 0.3s;
+    }
+
+    .primera-lista a:visited {
+        color: var(--main-text);
+    }
+
+    .primera-lista a:hover {
+        text-shadow: 5px 5px 5px black, 0 0 25px red, 0 0 25px red;
+        transition: 0.2s;
+    }
+
+    /*  ================== Banner =================== */
+
+    section .banner {
+        background-image: url(/img/banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section .banner .texto-medio {
+        margin: auto;
+        padding: 20px;
+        color: var(--main-text);
+        font-weight: bolder;
+        font-size: 35px;
+        text-shadow: 3px 3px 4px #000000;
+    }
+
+    section .btn {
+        margin-top: 6px;
+        background-color: maroon;
+        width: 250px; 
+        border-radius: 100px;
+        box-shadow: 5px 5px 15px #000000;  
+        transition: 0.3s ease-out;
+    }
+
+    .btn2:hover {
+        background: red;
+    }
+
+    section .btn p {
+        padding: 10px 20px 10px 20px;
+        font-size: 70%;
+        text-align: center;
+        text-decoration: none;
+        color: var(--main-text);
+    }
+
+    section .btn p a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .btn a {
+        text-decoration: none;
+    }
+
+    section .banner .btn:hover {
+        background: #8E0202;
+    }
+
+
+
+    /*============================= Lessons ============================*/
+
+    div .lessons {
+        max-width: 100vw;
+        background: #f2f2f2;
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center; /* Centra las imágenes dentro del div*/
+    }
+
+
+
+    /* .drums {
+        
+    } */
+
+
+
+    .drums:hover {
+        background: rgb(255, 255, 255);
+    }
+
+
+    div .lessons span {
+        font-weight: bold;
+        color: #2F2F2F;
+    }
+
+    .lessons img {
+        width: 90%;
+        padding: 20px 0px 20px 0px;
+    }
+
+    article div .lessons p {
+        width: 300px;
+        padding: 0px 0px 10px 0px;
+        display: inline-block; /* Centrando el texto debajo de las imágenes*/
+    }
+
+    div .lessons .drums, .guitar, .bass {
+        max-width: 100%;
+        width: 70%;
+        margin: 20px;
+        box-shadow:5px 5px 10px rgb(112, 112, 112);
+        border-radius: 30px;
+    }
+
+
+    .lessons img {
+        height: auto; /* Una imagen era más alta que el resto, aquí les doy el mismo tamaño a todas */
+        border-radius: 20px;
+    }
+
+
+    .imagen-card {
+        border-radius: 20px;
+    }
+
+    div .btn2 {
+        background: rgb(131,58,180);
+        background: linear-gradient(315deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px auto;
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    article .lessons .btn2 a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--main-text);
+        text-shadow: 3px 3px 4px #000000;
+    }
+
+    article .lessons .btn2 a i {
+        padding: 0px 10px 0 0;
+    }
+
+    /*====================== Contacto ===================*/
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form h2, .form-title {
+        color: #4b4b4b;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .form-title {
+        padding-top: 50px;
+    }
+
+    .formulario {
+        max-width: 1400px;
+        width: 100%;
+        background: #f2f2f2;
+        text-align: center;
+        padding: 30px;
+    }
+
+    section form input {
+        padding: 10px 20px 10px 20px;
+        margin: 10px auto;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .subscribe {
+        color: #666666  ;
+    } 
+
+    input[type="button"] {
+        width: 30%;
+        background: #fff;
+        outline: none;
+        
+    }
+
+    .input-resize {
+        width: 40%;
+        outline: none;
+    }
+
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+    /* ===================== Footer ====================    */
+
+    footer {
+        
+        width: 100%;
+        background: #000;
+        color: var(--main-text);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: stretch;
+
+    }
+
+    footer p {
+        padding: 20px;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 7px;
+    }
+
+    footer .div-redes {
+        display: flex;
+    }
+
+    footer div ul {
+        display: flex;
+    }
+
+    footer div ul li {
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        padding: 20px
+    }
+
+    footer div ul li a i {
+        color: var(--main-text);
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 420px) {
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0 0 0;
+        }
+
+       .primera-lista {
+            height: 30px;
+        }
+
+        .div-redes {
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer p {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            padding: 0;
+        }
+
+        .mapa {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            margin-left: -320px;
+        }
+
+        .name, .email {
+            width: 280px;
+        }
+    }
+
